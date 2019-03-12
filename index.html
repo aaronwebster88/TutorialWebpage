@@ -6,34 +6,235 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="main.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="Neue_Haas_Grotesk.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <!--
+/**
+ * @license
+ * MyFonts Webfont Build ID 3698506, 2019-01-15T18:54:42-0500
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: NHaasGroteskTXPro-55Rg by Linotype
+ * URL: https://www.myfonts.com/fonts/linotype/neue-haas-grotesk/pro-text-55-roman/
+ * 
+ * Webfont: NHaasGroteskTXPro-56It by Linotype
+ * URL: https://www.myfonts.com/fonts/linotype/neue-haas-grotesk/pro-text-56-italic/
+ * 
+ * Webfont: NHaasGroteskTXPro-65Md by Linotype
+ * URL: https://www.myfonts.com/fonts/linotype/neue-haas-grotesk/pro-text-65-medium/
+ * 
+ * Webfont: NHaasGroteskTXPro-66MdIt by Linotype
+ * URL:
+ * https://www.myfonts.com/fonts/linotype/neue-haas-grotesk/pro-text-66-medium-italic/
+ * 
+ * Webfont: NHaasGroteskTXPro-75Bd by Linotype
+ * URL: https://www.myfonts.com/fonts/linotype/neue-haas-grotesk/pro-text-75-bold/
+ * 
+ * Webfont: NHaasGroteskTXPro-76BdIt by Linotype
+ * URL:
+ * https://www.myfonts.com/fonts/linotype/neue-haas-grotesk/pro-text-76-bold-italic/
+ * 
+ * 
+ * License: https://www.myfonts.com/viewlicense?type=web&buildid=3698506
+ * Licensed pageviews: 20
+ * Webfonts copyright: Copyright &#x00A9; 2013 Monotype Imaging Inc. All rights
+ * reserved.
+ * 
+ * © 2019 MyFonts Inc
+*/
+
+-->
     <title>Tutorial Webpage</title>
 </head>
 <body>
+<!----------------------NAVBAR & SIDEBAR------------------------------------------------------------------->
     <section id="navbar">
         <nav>
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">News</a></li>
-                <li><a href="">Contact</a></li>
-                <li><a href="">About</a></li>
+            <ul id="topnav">
+                <li class="topnav"><a href="#navbar">Home</a></li>
+                <li class="topnav"><a href="#functions">Functions</a></li>
+                <li class="topnav"><a href="#objects">Objects</a></li>
+                <li class="topnav"><a href="#arrays">Arrays</a></li>
             </ul>
         </nav>
+        <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="https://www.w3schools.com/js/" target="blank">W3SCHOOLS</a>
+                <a href="https://javascript.info/" target="blank">JAVASCRIPT.INFO</a>
+                <a href="https://css-tricks.com/snippets/javascript/" target="blank">CSS TRICKS</a>
+        </div>
+              
+        <!-- Use any element to open the sidenav -->
+        <span onclick="openNav()" id="sideBarButton"> &#9776; </span>
     </section>
+
+<!-----------------------HEADER------------------------------------------------------------------>
     <section id="header">
         <header class="wrapper">
-            <h1>JavaScript Fundamentals</h1>
-            <p>by AARON</p>
+            <h1>JAVASCRIPT FUNDAMENTALS</h1>
+            <div class="title">
+                <article class="blurb"> 
+                    <span class="headshot animated infinite pulse"></span>
+                    <p>
+                        - "JavaSkrip is easy if you're a doctor like me, Dr. Steve Brule. Check it out, dingus!"
+                    </p>
+                </article>
+            </div>
         </header>
-        <!--<header></header>-->
     </section>
-    <section id="body">
-        <section id="sidebar">
-
+<!------------------------BODY / ROW (see CSS)---------------------------------------------------->
+    <div class="bgimg1">
+        <div class="caption" id="cap1">
+            <span class="border" id="bor1">Hi, I'm Dr. Steve Brule. <br><br>Welcome back to Check It Out, the show where we
+                                            check things out. Today's show is all about JavaSkrip. You gotta know 
+                                            how to put those dang letters together! <br><br>Let's Check It Out!
+            </span>
+        </div>
+    </div>
+    <section class="row">
+        <section class="col-12 body">
+            <h3 id="functions">
+                FUNCTIONS
+            </h3>
+            <div class="bodySubject">
+                <p> A JavaScript function is a block of code designed to perform a particular task.
+                    <br><br>
+                    A JavaScript function is executed when "something" invokes it (calls it).
+                    <br><br>
+                    A JavaScript function is defined with the function keyword, followed by a name, followed by parentheses ().
+                    Function names can contain letters, digits, underscores, and dollar signs (same rules as variables).
+                    <br><br>
+                    The parentheses may include parameter names separated by commas:
+                    (parameter1, parameter2, ...)
+                    The code to be executed, by the function, is placed inside curly brackets: {}
+                    <br><br>
+                    Here is an example, dingus!
+                    <br>
+                </p>
+            </div>
+            <code id="codeBlock">
+                function name(parameter1, parameter2, parameter3) {
+                <br>// code to be executed
+                <br> }
+            </code>
+            <br>
+            <br>
         </section>
     </section>
-    <section id="footer">
-        <footer></footer>
+    <div class="bgimg2">
+        <div class="caption" id="cap2">
+            <span class="border" id="bor2">Pretty cool, dangus!</span>
+        </div>
+    </div>
+    <section class="row">
+            <section class="col-12 body">
+                <h3 id="objects">
+                    OBJECTS
+                </h3>
+                <div class="bodySubject">
+                        <p> In real life, a car is an object.
+                            <br><br>
+                            A car has properties like weight and color, as well as different methods like start and stop.
+                            <br><br>
+                            All cars have the same properties, but the property values differ from car to car.
+                            All cars have the same methods, but the methods are performed at different times.
+                            <br><br>
+                            An object is a collection of properties, and a property is an association between a name (or key) and a value. 
+                            A property's value can be a function, in which case the property is known as a method. 
+                            In addition to objects that are predefined in the browser, you can define your own objects. 
+                            <br><br>
+                            Here is an example of an Object, dingus!
+                            <br>
+                        </p>
+                    </div>
+                    <code id="codeBlock">
+                            let person = {
+                                <br>firstName: "John",
+                                <br>lastName: "Doe",
+                                <br>age: 50,
+                                <br>eyeColor: "blue"
+                              <br>};
+                    </code>
+                    <br>
+                    <br>
+            </section>
+        </section>
+    <div class="bgimg3">
+        <div class="caption" id="cap3">
+            <span class="border" id="bor3">If you wanna know about JavaSkrip, you have to know about the Arrays. 
+                        If you wanna know about the Arrays you has to listen to me right now!!
+            </span>
+        </div>
+    </div>
+    <section class="row">
+            <section class="col-12 body">
+                <h3 id="arrays">
+                    ARRAYS
+                </h3>
+                <div class="bodySubject">
+                        <p> An array is a special variable, which can hold multiple values at a time.
+                            <br><br>
+                            If you have a list of items (a list of all your dang friends, for example), 
+                            storing them each in single variables could get messy!
+                            <br><br>
+                            What if you want to loop through your dang friends and find a specific doofus? 
+                            And what if you had 300 dang, doofus friends?
+                            <br><br>
+                            The solution is an array!
+                            <br><br>
+                            An array can hold many values under a single variable, and you can access the values by 
+                            referring to an index number.
+                            <br><br>
+                            Index numbers start at 0 for the first value and count up depending on the number of values in the array.
+                            <br><br>
+                            Here is an example, dingus!
+                            <br>
+                        </p>
+                    </div>
+                    <code id="codeBlock">
+                            let cars = [
+                            <br>"Saab",
+                            <br>"Volvo",
+                            <br>"BMW"
+                          <br>];
+                    </code>
+                    <br>
+                    <br>
+            </section>
     </section>
+    <div class="bgimg4">
+        <div class="caption" id="cap4">
+            <span class="border" id="bor4">Now you're a dang JavaSkrip Coder! <br>Good job, dingus! <br>But you're not as good as me, so get better!
+            </span>
+        </div>
+    </div>
+
+<!-----------------------FOOTER------------------------------------------------------------------->
+    <section id="footer">
+        <footer>
+            <h6>Tutorial Website - R. Aaron Webster 2019</h6>
+        </footer>
+    </section>
+
+<!-----------------------JS FOR SIDEBAR------------------------------------------------------------------->
+    <script>
+        /* Set the width of the side navigation to 250px */
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("sideBarButton").style.display = "none";
+        }
+
+        /* Set the width of the side navigation to 0 */
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("sideBarButton").style.display = "";
+        }
+    </script>
 </body>
 </html>
 
@@ -44,18 +245,13 @@
 
 <!--REQUIREMENTS: 
         
-        B): <header>, <footer>, <article>, <sidebar>   
-        D): Must have body content informing the user about the topics listed below
-        E): Links in nav must be able to direct users to the matching topic sections
-        F): Must have at least 3 educational programming links on the site - these links should open in a new tab
-        G): Must make use of at least one AnimateCSS animation
-        
-        CONTENT:
-        A): You must include and describe at least 3 of the following 5 concepts within your webpage: 
-                - Functions
-                - Objects
-                - Arrays
-                - For loops
-                - Conditionals
+       
+
+
+<sidebar>
+Must have body content informing the user about topics listed below
+Must make use of at least one AnimateCSS animation
+
+
      -->
    
